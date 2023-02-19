@@ -7,6 +7,7 @@ provider "google" {
 
 module "vpc" {
   source = "./modules/network"
+  server_port = var.server_port
 }
 
 module "instance" {

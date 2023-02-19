@@ -18,7 +18,7 @@ resource "google_compute_firewall" "general_rule" {
   }
   allow {
     protocol = "udp"
-    ports    = ["18844"]
+    ports    = [var.server_port]
   }
 
   target_tags   = ["pritunl-server"]

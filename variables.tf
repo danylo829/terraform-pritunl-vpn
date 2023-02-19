@@ -27,3 +27,8 @@ variable "ssh_pub_key_path" {
   type = string
   description = "Path to public ssh key"
 }
+
+variable "server_port" {
+  type = string
+  description = "Server port through which VPN clients will be connected"
+}
